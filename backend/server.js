@@ -10,7 +10,7 @@ app.use(cors());
 app.use(express.json());
 
 // Contract ABI and address
-const BugHuntrABI = require('./contracts/BugHuntr.json').abi;
+const BugHuntr = require('../artifacts/contracts/BugHuntr.sol/BugHuntr.json');
 const contractAddress = process.env.CONTRACT_ADDRESS;
 
 // Initialize provider and contract
